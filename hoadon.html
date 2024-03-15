@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dathang.css"/>
+    <style>
+        .header{   
+    background-color: pink;
+    color: black(255, 255, 255);
+    width: 100%;
+    height: 65px;
+    margin: 0px auto;
+}
+.form-center {
+    margin: 0 auto;
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-center label,
+.form-center input,
+.form-center select,
+.form-center button {
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+    padding: 10px;
+}
+
+.text{
+    text-align: center;
+    
+}
+        .menu-web{
+    background-color: pink;
+    width: 100%;
+    height: 50px;
+    top: 30px;
+    left: 15px;
+    margin: 0px auto;
+    font-size: 15px;
+}
+
+.roost{
+    list-style-type: none;
+}
+
+.roost li{
+    float: left;
+    position: relative;
+    display: block;
+}
+
+.roost li a{
+    text-decoration: none;
+    text-transform: none;
+    color:black;
+    padding: 0px 15px 15px 15px;
+    line-height: 50px;
+    display: block;
+}
+
+.roost li a:hover{
+   background-color: pink;
+    color: blue;
+    transform: ease-in 0.35s; 
+}
+
+.sub-menu{
+    width: 250px;
+    background-color: pink;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sub-menu li{
+    list-style: none;
+}
+
+.sub-menu li a{
+    text-decoration: none;
+    text-transform: none;
+    color: blue;
+    display: block;
+    border: 1px solid #fefefe;
+    line-height: 40px;
+    text-indent: 10px;
+}
+
+.roost li:hover .sub-menu{
+    display: flex;
+    background-color: pink;
+    color: black;
+    transform: ease-in 0.35s;
+}
+
+.sub-menu li a:hover{
+    background-color: pink;
+    color: black;
+}.roost {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.roost li {
+    float: left;
+    position: relative;
+}
+
+.roost li a {
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+    padding: 0px 15px;
+    line-height: 50px;
+    display: block;
+}
+
+.roost li a:hover {
+    background-color:black;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.35s ease-in;
+}
+
+.sub-menu {
+    width: 250px;
+    background-color: rgb(0, 0, 0);
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 0;
+}
+
+.sub-menu li {
+    list-style: none;
+}
+
+.sub-menu li a {
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #fefefe;
+}
+
+.sub-menu li a:hover {
+    background-color: rgb(90, 83, 83);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>SHOP MỸ PHẨM ONLINE</h1>
+            <div class="menu-web">
+                <div class="menu">
+                    <ul class="roost">
+                        <li><a href="file:///C:/Users/Dell/Documents/baitaplon/trangchu2.html">Trang chủ</a></li>
+                        <li><a href="">Sản phẩm</a>
+                        <ul class="sub-menu">
+                            <li><a href="">SON </a></li>
+                            <li><a href="">KEM CHỐNG NẮNG</a></li>
+                            <li><a href=""> PHẤN PHỦ</a></li>
+                             <li><a href="">KEM NỀN</a></li>
+                            <li><a href="">KEM LÓT</a></li>
+                    </ul>
+                        <li><a href="file:///C:/Users/Dell/Documents/baitaplon/.vscode/hoadon.html">Đặt hàng</a></li>
+                        <li><a href="file:///C:/Users/Dell/Documents/baitaplon/baomat.html">Chính sách và bảo mật</a>
+                        </ul></li>
+                    </ul>
+                </div>
+                </div>
+</header>
+    <div class="content">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>    
+    </div>
+        <section class="order-form">
+            <h2>Trang Đặt Hàng</h2>
+            <form class="form-center" action="submit_order.php" method="post">
+                <label for="product">Sản Phẩm:</label><br>
+                <select id="product" name="product" required>
+                    <option value="">Chọn sản phẩm</option>
+                  
+                </select><br>
+                <label for="name">Họ và Tên:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="sodienthoai">Số điện thoại:</label><br>
+                <input type="sodienthoai" id="sodienthoai" name="sodienthoai" required><br>
+                <label for="diachi">Địa chỉ:</label><br>
+                <input type="diachi" id="diachi" name="diachi" required><br>
+                <label for="quantity">Số Lượng:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" required><br>
+            </select><br>
+                <button type="submit">Đặt Hàng</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <q>địa chỉ: đông anh- hà nội</q>
+        <p>&copy; 2024  Nghiêm Thị Ngọc Bích - CNTT 1707 - 0961339050</p>
+    </footer>
+</body>
+</html>
