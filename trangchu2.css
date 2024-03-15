@@ -196,4 +196,50 @@ margin: 0px auto;
 
 .footer .bang1 td:first-child {
     width: 60%;
+} .s1{
+    margin-bottom: 150px;
+}
+.s1 p{
+    text-align: center;
+}
+.s1 h2{
+    text-align: center;
+    margin:  0 0 20px;
+}
+.sps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sp{
+    width: calc(33.33%-20px);
+    margin-bottom: 50px;
+    text-align: center;
+    border: 1px solid rgb(139, 38, 38);
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+}
+.sp:hover{
+    background-color: yellowgreen;
+}
+.sp img{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.sp h3{
+    margin: 10px 0;
+}
+.sp button{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sp button:hover{
+    background-color: red;
 }
